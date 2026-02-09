@@ -1,20 +1,29 @@
 {
   "name": "litellm-clawrouter",
-  "version": "1.0.0",
-  "description": "CLI to configure OpenClaw to route through LiteLLM proxy",
-  "main": "index.js",
+  "version": "1.1.0",
+  "description": "Smart LLM router for OpenClaw → LiteLLM. Save 78%+ on inference costs with auto-routing.",
+  "main": "src/router.js",
   "bin": {
     "litellm-clawrouter": "./bin/cli.js"
   },
+  "exports": {
+    ".": "./src/router.js",
+    "./router": "./src/router.js",
+    "./proxy": "./src/proxy.js"
+  },
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "start": "node bin/cli.js start"
   },
   "keywords": [
     "litellm",
     "openclaw",
     "llm",
     "proxy",
-    "ai"
+    "ai",
+    "router",
+    "cost-optimization",
+    "auto-routing"
   ],
   "author": "BerriAI",
   "license": "MIT",
