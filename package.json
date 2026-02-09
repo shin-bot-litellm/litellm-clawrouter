@@ -1,0 +1,29 @@
+{
+  "name": "litellm-clawrouter",
+  "version": "1.0.0",
+  "description": "CLI to configure OpenClaw to route through LiteLLM proxy",
+  "main": "index.js",
+  "bin": {
+    "litellm-clawrouter": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "litellm",
+    "openclaw",
+    "llm",
+    "proxy",
+    "ai"
+  ],
+  "author": "BerriAI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BerriAI/litellm-clawrouter.git"
+  },
+  "homepage": "https://github.com/BerriAI/litellm-clawrouter#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
